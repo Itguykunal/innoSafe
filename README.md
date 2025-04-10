@@ -1,4 +1,4 @@
-# LocalLink - innoSafe
+# innoSafe
 
 **innoSafe** is a real-time chat monitoring application designed to detect and alert on unsafe or harmful interactions, especially to protect children from online abuse. It leverages NLP and a fine-tuned BERT model to assess the severity of conversations and broadcasts alerts for high-risk behavior.
 
