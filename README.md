@@ -34,22 +34,7 @@ Our model is trained on a **realistic, hand-crafted dataset** of chat conversati
 ## 📁 Project Structure
 
 ```
-LocalLink/
-│
-├── chatLogs/               # Stored chat conversations
-├── node_modules/           # Node.js dependencies
-├── public/                 # Static frontend assets
-│
-├── package.json            # Node.js project config
-├── package-lock.json       # Node.js dependency lock file
-│
-├── server.js               # Node.js server for frontend/backend API
-├── app.py                  # Python backend handling ML inference
-├── BERT3.ipynb             # Model training notebook (BERT)
-├── CLEANcorpus4.docx       # Dataset file for chat training
-│
-├── LICENSE                 # Project license
-└── README.md               # This file
+INNOSAFE/ │ ├── chatLogs/ # Stored chat logs for analysis ├── node_modules/ # Node.js dependencies ├── public/ # Static frontend files ├── server.js # Main backend server ├── app.py # Python model runner ├── BERT3.ipynb # Jupyter notebook for training and testing ├── CLEANcorpus4.docx # Cleaned and curated corpus ├── package.json # Node package definition ├── package-lock.json # Node package lockfile ├── LICENSE # License file └── README.md # Project documentation
 ```
 
 ---
