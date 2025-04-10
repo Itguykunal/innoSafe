@@ -1,6 +1,6 @@
-# innoSafe
+# LocalLink - innoSafe
 
-**innoSafe** is a real-time chat monitoring application designed to detect and alert on unsafe or harmful interactions, especially to protect children from online abuse. It leverages NLP and machine learning to assess the severity of conversations and integrates OCR to extract text from images.
+**innoSafe** is a real-time chat monitoring application designed to detect and alert on unsafe or harmful interactions, especially to protect children from online abuse. It leverages NLP and a fine-tuned BERT model to assess the severity of conversations and broadcasts alerts for high-risk behavior.
 
 ---
 
@@ -8,10 +8,26 @@
 
 - 🚨 **Real-time Danger Detection** using BERT-based model
 - 🧠 **Contextual NLP Analysis** to assess threat levels
-- 👁️ **OCR Integration** to detect harmful content in images
 - 📈 **Severity Level Classification** (0–10)
 - 📡 **Web Interface** for chat monitoring
 - 📁 **Chat Logs Archiving**
+
+---
+
+## 📊 Dataset
+
+Our model is trained on a **realistic, hand-crafted dataset** of chat conversations that simulate actual online interactions. The dataset:
+
+- Includes a wide range of age-based conversations (e.g., teens and adults)
+- Covers both **safe** and **toxic/inappropriate** dialogues
+- Contains severity labels ranging from **0 (safe)** to **10 (highly dangerous)**
+- Was designed specifically to detect:
+  - **Grooming**
+  - **Predatory behavior**
+  - **Inappropriate language**
+  - **Emotional manipulation**
+
+> 🧪 The dataset is not sourced from public corpora — it is **fully synthetic**, yet modeled on real-world behavioral patterns to ensure practical effectiveness.
 
 ---
 
@@ -69,10 +85,10 @@ node server.js
 
 ## 📌 Notes
 
-- Ensure Python dependencies are installed (`transformers`, `torch`, `flask`, etc.).
-- Node.js is required for running the frontend (`express`, etc.).
-- The system uses a shared interface between `app.py` and `server.js` for real-time interaction and classification.
-- Under development, more features to be added soon.
+- Ensure Python dependencies are installed (`transformers`, `torch`, `flask`, etc.)
+- Node.js is required for running the frontend (`express`, `socket.io`, etc.)
+- The system uses a shared interface between `app.py` and `server.js` for real-time interaction and classification
+- **OCR is not currently implemented** — all detection is based on text only
 
 ---
 
@@ -81,9 +97,9 @@ node server.js
 We are constantly improving innoSafe for better performance, accuracy, and coverage of unsafe conversations. Future improvements will include:
 
 - Multilingual support
-- Advanced OCR filtering
-- Parent/admin dashboard
+- Admin dashboard for parents
 - More datasets for diverse training
+- Integration with mobile app monitoring
 
 ---
 
