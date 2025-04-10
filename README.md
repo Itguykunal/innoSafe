@@ -1,4 +1,3 @@
-```markdown
 # LocalLink - innoSafe
 
 **innoSafe** is a real-time chat monitoring application designed to detect and alert on unsafe or harmful interactions, especially to protect children from online abuse. It leverages NLP and machine learning to assess the severity of conversations and integrates OCR to extract text from images.
@@ -91,4 +90,3 @@ We are constantly improving innoSafe for better performance, accuracy, and cover
 ## 📄 License
 
 MIT License
-```
